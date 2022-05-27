@@ -68,7 +68,7 @@ def chargemix_full_object_fetch (request, pk):
         "has_nodularization" : cm_grade.has_nodu
     }
 
-    # fetch elements
+    # fetch element
 
     db_element_dict = {x.id : {"id" : x.id, "name" : x.name, "symbol": x.symbol} for x in Element.objects.all ()}
 
